@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida - Programador de Software</title>
+    <style>
+        @media print {
+            body { margin: 0; }
+            .no-print { display: none; }
+        }
+        
+        body {
+            font-family: 'Calibri', Arial, sans-serif;
+            line-height: 1.4;
+            color: #333;
+            max-width: 21cm;
+            margin: 0 auto;
+            padding: 1cm;
+            background: white;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 30px;
+            margin: -1cm -1cm 20px -1cm;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            align-items: center;
+        }
+        
+        .personal-info h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            margin-bottom: 15px;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            font-size: 14px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .photo-container {
+            width: 120px;
+            height: 120px;
+            border-radius: 8px;
+            background: #ecf0f1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: #7f8c8d;
+            border: 3px solid white;
+            justify-self: end;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section h2 {
+            color: #2c3e50;
+            font-size: 20px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #3498db;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        
+        .profile-text {
+            text-align: justify;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .skill-item {
+            background: #ecf0f1;
+            padding: 8px 12px;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 13px;
+            color: #2c3e50;
+        }
+        
+        .cert-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        .cert-item {
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .cert-title {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+        
+        .cert-institution {
+            color: #3498db;
+            font-weight: 600;
+            font-size: 13px;
+            margin-bottom: 2px;
+        }
+        
+        .cert-duration {
+            color: #7f8c8d;
+            font-size: 12px;
+            font-style: italic;
+        }
+        
+        .experience-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #27ae60;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 16px;
+        }
+        
+        .company {
+            color: #27ae60;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        .job-period {
+            color: #7f8c8d;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+        
+        .job-description {
+            font-size: 13px;
+            line-height: 1.5;
+        }
+        
+        .download-btn {
+            background: #27ae60;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            margin: 20px 0;
+            display: block;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 12px;
+            color: #7f8c8d;
+            border-top: 1px solid #ecf0f1;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="personal-info">
+            <h1>[TU NOMBRE COMPLETO]</h1>
+            <div class="subtitle">Programador de Software</div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📧</span> [tu-email@correo.com]
+                </div>
+                <div class="contact-item">
+                    <span>📱</span> [+57 XXX XXX XXXX]
+                </div>
+                <div class="contact-item">
+                    <span>🆔</span> C.C. [Tu Cédula]
+                </div>
+                <div class="contact-item">
+                    <span>🎂</span> [DD/MM/AAAA]
+                </div>
+                <div class="contact-item">
+                    <span>📍</span> Bogotá D.C., Colombia
+                </div>
+                <div class="contact-item">
+                    <span>💼</span> Disponibilidad Inmediata
+                </div>
+            </div>
+        </div>
+        <div class="photo-container">
+            📷
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Perfil Profesional</h2>
+        <div class="profile-text">
+            <strong>Desarrollador de software</strong> con sólida formación en <strong>HTML, CSS y JavaScript</strong>, complementada con conocimientos en bases de datos y desarrollo web. Profesional versátil con 23 certificaciones que demuestran mi compromiso con el aprendizaje continuo y la excelencia técnica.
+        </div>
+        <div class="profile-text">
+            Mi experiencia abarca desde <strong>programación de software (SENA - 15 meses)</strong> hasta competencias técnicas en instalaciones eléctricas, redes de datos y atención al cliente. Destaco por mi <strong>proactividad, capacidad de adaptación y enfoque en resultados</strong>, cualidades que me permiten integrarme eficazmente en equipos multidisciplinarios.
+        </div>
+        <div class="profile-text">
+            Cuento con formación en inglés nivel A2, conocimientos en Excel intermedio, y experiencia en facturación electrónica. Mi perfil combina habilidades técnicas con competencias en seguridad laboral y primeros auxilios, lo que me convierte en un profesional integral y confiable.
+        </div>
+        
+        <div class="skills-grid">
+            <div class="skill-item">HTML5 & CSS3</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">Bases de Datos</div>
+            <div class="skill-item">Desarrollo Web</div>
+            <div class="skill-item">Excel Intermedio</div>
+            <div class="skill-item">Inglés A2</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Experiencia Laboral</h2>
+        <div class="experience-item">
+            <div class="job-title">Desarrollador Web Junior</div>
+            <div class="company">[Nombre de la Empresa]</div>
+            <div class="job-period">[Fecha Inicio] - [Fecha Fin] / [Ciudad]</div>
+            <div class="job-description">
+                • Desarrollo de páginas web responsive utilizando HTML5, CSS3 y JavaScript<br>
+                • Implementación de funcionalidades interactivas y optimización de rendimiento<br>
+                • Colaboración en proyectos de equipo y cumplimiento de deadlines establecidos
+            </div>
+        </div>
+        
+        <div class="experience-item">
+            <div class="job-title">Técnico en Instalaciones</div>
+            <div class="company">[Nombre de la Empresa]</div>
+            <div class="job-period">[Fecha Inicio] - [Fecha Fin] / [Ciudad]</div>
+            <div class="job-description">
+                • Instalación y mantenimiento de sistemas eléctricos residenciales<br>
+                • Configuración de redes de datos y sistemas de comunicación<br>
+                • Atención al cliente y resolución de problemas técnicos
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Educación y Certificaciones</h2>
+        <div class="cert-grid">
+            <div>
+                <div class="cert-item">
+                    <div class="cert-title">Programación de Software</div>
+                    <div class="cert-institution">SENA</div>
+                    <div class="cert-duration">15 meses presenciales</div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-title">Creación de Páginas Web</div>
+                    <div class="cert-institution">PLATZI</div>
+                    <div class="cert-duration">20 horas virtuales</div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-title">Fundamentos de Bases de Datos</div>
+                    <div class="cert-institution">PLATZI</div>
+                    <div class="cert-duration">20 horas virtuales</div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-title">Excel Intermedio</div>
+                    <div class="cert-institution">Edunorte</div>
+                    <div class="cert-duration">100 horas presenciales</div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-title">Inglés A1 y A2</div>
+                    <div class="cert-institution">PLATZI</div>
+                    <div class="cert-duration">40 horas virtuales</div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-title">Instalaciones Eléctricas</div>
+                    <div class="cert-institution">SENA</div>
+                    <div class="cert-duration">40 horas presenciales</div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-title">Redes de Datos</div>
+                    <div class="cert-institution">SENA</div>
+                    <div class="cert-duration">40 horas presenciales</div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-title">Facturación Electrónica</div>
+                    <div class="cert-institution">PLATZI</div>
+                    <div class="cert-duration">20 horas virtuales</div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="cert-item">
+                    <div class="cert-title">Mecánica Automotriz</div>
+                    <div class="cert-institution">Edunorte</div>
+                    <div class="cert-duration">6 meses</div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-title">Seguridad y Salud en el Trabajo</div>
+                    <div class="cert-institution">SENA</div>
+                    <div class="cert-duration">40 horas presenciales</div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-title">Trabajos en Alturas</div>
+                    <div class="cert-institution">SENA</div>
+                    <div class="cert-duration">40 horas presenciales</div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-title">Primeros Auxilios</div>
+                    <div class="cert-institution">Bomberos Mosquera</div>
+                    <div class="cert-duration">10 horas presenciales</div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-title">Auxiliar Veterinario</div>
+                    <div class="cert-institution">Sin Fronteras</div>
+                    <div class="cert-duration">1 año presencial</div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-title">Atención al Cliente</div>
+                    <div class="cert-institution">SENA / ASVES</div>
+                    <div class="cert-duration">80 horas presenciales</div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-title">Mercadeo y Ventas</div>
+                    <div class="cert-institution">SENA</div>
+                    <div class="cert-duration">40 horas presenciales</div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-title">Formación en Seguridad</div>
+                    <div class="cert-institution">ASVES / Ejército</div>
+                    <div class="cert-duration">Múltiples certificaciones</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Competencias Adicionales</h2>
+        <div class="profile-text">
+            <strong>• Liderazgo y Trabajo en Equipo:</strong> Experiencia en coordinación de proyectos y colaboración multidisciplinaria<br>
+            <strong>• Resolución de Problemas:</strong> Capacidad analítica desarrollada a través de formación técnica diversa<br>
+            <strong>• Adaptabilidad:</strong> Versatilidad demostrada en múltiples áreas profesionales<br>
+            <strong>• Comunicación Efectiva:</strong> Habilidades desarrolladas en atención al cliente y mercadeo<br>
+            <strong>• Seguridad Laboral:</strong> Certificaciones en primeros auxilios y prevención de riesgos<br>
+            <strong>• Aprendizaje Continuo:</strong> 23 certificaciones obtenidas en diversas instituciones reconocidas
+        </div>
+    </div>
+
+    <div class="no-print">
+        <button class="download-btn" onclick="window.print()">
+            🖨️ Imprimir / Guardar como PDF
+        </button>
+        
+        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-top: 20px;">
+            <h3>📋 Instrucciones para usar en tu página web:</h3>
+            <p><strong>1.</strong> Guarda este documento como "CV_[Tu_Nombre].pdf" en la carpeta de tu página web</p>
+            <p><strong>2.</strong> Usa este enlace en tu botón de descarga:</p>
+            <code style="background: #e9ecef; padding: 5px 10px; border-radius: 4px; display: block; margin-top: 10px;">
+                &lt;a href="./archivos/CV_[Tu_Nombre].pdf" download="CV_[Tu_Nombre].pdf"&gt;Descargar CV&lt;/a&gt;
+            </code>
+            <p style="margin-top: 15px;"><strong>3.</strong> O si prefieres que se abra en nueva pestaña:</p>
+            <code style="background: #e9ecef; padding: 5px 10px; border-radius: 4px; display: block; margin-top: 10px;">
+                &lt;a href="./archivos/CV_[Tu_Nombre].pdf" target="_blank"&gt;Ver CV&lt;/a&gt;
+            </code>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Documento generado el [Fecha Actual] • Disponible para entrevistas inmediatas</p>
+        <p><em>"Comprometido con la excelencia profesional y el crecimiento continuo"</em></p>
+    </div>
+
+    <script>
+        // Función para imprimir
+        function printCV() {
+            window.print();
+        }
+    </script>
+</body>
+</html>
